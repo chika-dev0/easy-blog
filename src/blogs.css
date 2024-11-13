@@ -1,0 +1,41 @@
+.postName {
+    display: inline-block;
+    width: 70%;
+    padding: 10px;
+    height: 1em;
+    margin-bottom: 3px;
+}
+
+.postElement {
+    display: inline-block;
+    width: 70%;
+    padding: 10px;
+    height: 2em;
+    margin-bottom: 5px;
+}
+
+
+.post {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 10px, 10px;
+    text-align: center;
+}
+
+.postNameList {
+    list-style: none;
+    font-size: 30px;
+}
+
+
+.postElemetList {
+    list-style: none;
+}
+
+postList {
+    border: solid;
+    border-color: gray;
+    
+    width: 70%;
+}
