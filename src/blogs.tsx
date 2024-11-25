@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import "./blogs.css";
 import { Button, TextField } from "@mui/material";
 import { PostfixUnaryExpression } from "typescript";
-import AddCommentComp from "./comment";
+import AddCommentComp from "./components/commentComp";
 import { usePost } from "./hooks";
-// import ReactDOM  from "react-dom";
-// import Button from '@mui/material/Button'
 
 type Post = {
   id: number;
@@ -63,7 +61,7 @@ const Blogs = () => {
         {posts.map((post, id) => (
           <div>
             <button>削除</button>
-            <div className="postlist">
+            <div className="postList">
               <h2>{post.author}</h2>
               <p>{post.content}</p>
             </div>

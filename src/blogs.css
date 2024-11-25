@@ -33,9 +33,7 @@
     list-style: none;
 }
 
-postList {
-    border: solid;
-    border-color: gray;
-    
-    width: 70%;
+
+.commnetList {
+    list-style: none;
 }
