@@ -1,21 +1,12 @@
 import { useState } from "react";
-
-type Post = {
-  id: number;
-  author: string;
-  content: string;
-  createdAt: string;
-  comments: [];
-};
-
-type NewPost = {
-  author: string;
-  content: string;
-};
+import { TypeOfPost, TypeOfNewPost } from "../types/blogType";
 
 export const usePost = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
-  const [newPost, setNewPost] = useState<NewPost>({ author: "", content: "" });
+  const [posts, setPosts] = useState<TypeOfPost[]>([]);
+  const [newPost, setNewPost] = useState<TypeOfNewPost>({
+    author: "",
+    content: "",
+  });
   const PostSituation = newPost.author !== "" && newPost.content !== "";
 
   const addPost = () => {
@@ -34,12 +25,12 @@ export const usePost = () => {
     ]);
     setNewPost({ author: "", content: "" });
   };
-  
+
   return {
     newPost,
     setNewPost,
     addPost,
     posts,
     setPosts,
-  }
+  };
 };
